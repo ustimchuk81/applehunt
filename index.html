@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Здарова, чё как</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      color: #f5f3ff;
+      background:
+        radial-gradient(ellipse at 15% 15%, #502a8a66, transparent 42%),
+        radial-gradient(ellipse at 85% 85%, #164c7466, transparent 40%),
+        #0b0b12;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    .card {
+      width: min(100%, 680px);
+      padding: clamp(32px, 7vw, 64px);
+      text-align: center;
+      border: 1px solid #ffffff20;
+      border-radius: 28px;
+      background: linear-gradient(145deg, #ffffff12, #ffffff05);
+      box-shadow: 0 24px 80px #0008;
+      backdrop-filter: blur(16px);
+    }
+
+    h1 {
+      margin: 0 0 28px;
+      font-size: clamp(2.5rem, 9vw, 5rem);
+      line-height: 1.05;
+      letter-spacing: -0.06em;
+      background: linear-gradient(100deg, #fff 15%, #c4a5ff 55%, #80e1ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .message {
+      margin: 0 auto 36px;
+      max-width: 540px;
+      color: #d0ccdc;
+      font-size: clamp(1.2rem, 4vw, 1.6rem);
+      line-height: 1.65;
+      white-space: pre-wrap;
+    }
+
+    button {
+      min-width: 180px;
+      padding: 16px 28px;
+      border: 0;
+      border-radius: 14px;
+      color: #101018;
+      background: linear-gradient(100deg, #c4a5ff, #80e1ff);
+      font: inherit;
+      font-size: 1.15rem;
+      font-weight: 750;
+      cursor: pointer;
+      box-shadow: 0 8px 30px #9b78ff40;
+      transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 36px #9b78ff66;
+    }
+
+    button:active {
+      transform: translateY(0);
+    }
+
+    button:focus-visible {
+      outline: 3px solid white;
+      outline-offset: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+    <h1>Здарова, чё как</h1>
+
+    <p class="message"><!-- ИЗМЕНИ ТЕКСТ ЗДЕСЬ -->
+АЛИНА ЛУЧШИЙ БУХГАЛТЕР
+    </p>
+
+    <button type="button">Поняла</button>
+  </main>
+</body>
+</html>
